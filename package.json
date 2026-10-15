@@ -1,0 +1,45 @@
+{
+  "name": "obsidian-content-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "description": "内容创作、排期与微信/GitHub交付工作台",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wang-zhengxin/obsidian-content-workbench.git"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && prettier --check src/styles.css && node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "test": "vitest run",
+    "prepreview": "npm run build",
+    "preview": "node scripts/preview.mjs",
+    "prepackage": "npm run build",
+    "package": "node scripts/package.mjs",
+    "seed": "node scripts/seed.mjs",
+    "install:test": "node scripts/install-test.mjs",
+    "format": "prettier --write src tests scripts vitest.config.ts"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.0",
+    "marked": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^26.0.0",
+    "obsidian": "^1.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.3"
+  },
+  "type": "module"
+}

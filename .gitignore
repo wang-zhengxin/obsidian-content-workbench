@@ -1,0 +1,16 @@
+node_modules/
+dist/
+test-vault/
+test-results/
+coverage/
+.obsidian/
+.env
+.env.*
+*.local.*
+*.tsbuildinfo
+# Local design exports contain temporary asset URLs; runtime assets are in assets/.
+design/
+scripts/download-assets.mjs
+releases/*.tmp.zip
+*.log
+.DS_Store

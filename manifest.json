@@ -1,0 +1,9 @@
+{
+  "id": "content-workbench",
+  "name": "Content Workbench",
+  "version": "0.1.0",
+  "minAppVersion": "1.14.0",
+  "description": "内容创作看板、排期、微信公众号草稿同步与 GitHub Markdown 推送。",
+  "author": "Lewis",
+  "isDesktopOnly": true
+}
